@@ -1,18 +1,18 @@
 import { skills } from "../data/skill";
 import { motion } from "framer-motion";
 import { containerVariants, skillVariants } from "../utils/variants";
+import TitlePage from "../components/TitlePage";
 
 const Skill = () => {
+  const title = {
+    h1: "Skills",
+    p: "Here are some of my skills on which I have been working on for the past 1 years.",
+  };
+
   return (
     <main className="mt-3 pt-3 px-3 px-md-5">
       <section className="skills container">
-        <div className="title text-center">
-          <h1 className="display-5 fw-bolder">Skills</h1>
-          <p className="opacity-50 fs-5">
-            Here are some of my skills on which I have been working on for the
-            past 1 years.
-          </p>
-        </div>
+        <TitlePage h1={title.h1} p={title.p} />
         <motion.div
           className="skills-container d-flex justify-content-center flex-wrap gap-md-3 gap-2"
           variants={containerVariants}

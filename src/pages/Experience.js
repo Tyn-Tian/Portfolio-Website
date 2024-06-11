@@ -11,6 +11,7 @@ import { createTheme } from "@mui/material";
 import ExperienceCard from "../components/ExperienceCard";
 import { motion } from "framer-motion";
 import { timelineParafVariants, timelineCardVariants } from "../utils/variants";
+import TitlePage from "../components/TitlePage";
 
 const Experience = () => {
   createTheme({
@@ -24,16 +25,15 @@ const Experience = () => {
     },
   });
 
+  const title = {
+    h1: "Experience",
+    p: "My work experience as a Frontend Web Developer, Photographer and working on different companies and projects.",
+  };
+
   return (
     <main className="mt-3 pt-3 px-3 px-md-5">
       <section className="experience container">
-        <div className="title text-center">
-          <h1 className="display-5 fw-bolder">Experience</h1>
-          <p className="opacity-50 fs-5">
-            My work experience as a Frontend Web Developer, Photographer and
-            working on different companies and projects.
-          </p>
-        </div>
+        <TitlePage h1={title.h1} p={title.p} />
         <div className="experience-container mt-5">
           <Timeline position="alternate-reverse">
             {experience.map((item, index) => (

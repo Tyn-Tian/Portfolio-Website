@@ -9,18 +9,18 @@ import {
 import { motion } from "framer-motion";
 import EducationCard from "../components/EducationCard";
 import { timelineParafVariants, timelineCardVariants } from "../utils/variants";
+import TitlePage from "../components/TitlePage";
 
 const Education = () => {
+  const title = {
+    h1: "Education",
+    p: "My education has been a journey of self-discovery and growth. My educational details are as follows.",
+  };
+
   return (
     <main className="mt-3 pt-3 px-3 px-md-5">
       <section className="education container">
-        <div className="title text-center">
-          <h1 className="display-5 fw-bolder">Education</h1>
-          <p className="opacity-50 fs-5">
-            My education has been a journey of self-discovery and growth. My
-            educational details are as follows.
-          </p>
-        </div>
+        <TitlePage h1={title.h1} p={title.p} />
         <div className="education-container mt-5">
           <Timeline position="alternate">
             <TimelineItem>

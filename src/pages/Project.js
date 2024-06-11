@@ -2,15 +2,18 @@ import ButtonPrimary from "../components/ButtonPrimary";
 import { projects } from "../data/project";
 import { motion } from "framer-motion";
 import { containerVariants, projectCardVariants } from "../utils/variants";
+import TitlePage from "../components/TitlePage";
 
 const Project = () => {
+  const title = {
+    h1: "Projects",
+    p: "Here are some of my projects",
+  };
+
   return (
     <main className="mt-3 pt-3 px-3 px-md-5">
       <section className="project container">
-        <div className="title text-center">
-          <h1 className="display-5 fw-bolder">Projects</h1>
-          <p className="opacity-50 fs-5">Here are some of my projects.</p>
-        </div>
+        <TitlePage h1={title.h1} p={title.p} />
         <div className="projects-container mt-5">
           <motion.div
             className="row"
