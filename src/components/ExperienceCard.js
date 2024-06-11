@@ -1,4 +1,4 @@
-const ExperienceCard = ({className, item}) => {
+const ExperienceCard = ({ className, item }) => {
   return (
     <div className={`card ${className}`}>
       <div className="card-body">

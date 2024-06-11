@@ -63,11 +63,19 @@ const Navbar = () => {
                     Education
                   </Link>
                 </li>
-                <ButtonPrimary className={"d-block d-lg-none mt-lg-0 mt-3"} link={"https://github.com/Tyn-Tian"} content={"Github Profile"} />
+                <ButtonPrimary
+                  className={"d-block d-lg-none mt-lg-0 mt-3"}
+                  link={"https://github.com/Tyn-Tian"}
+                  content={"Github Profile"}
+                />
               </ul>
             </div>
           </div>
-          <ButtonPrimary className={"d-lg-block d-none mt-lg-0 mt-3"} link={"https://github.com/Tyn-Tian"} content={"Github Profile"} />
+          <ButtonPrimary
+            className={"d-lg-block d-none mt-lg-0 mt-3"}
+            link={"https://github.com/Tyn-Tian"}
+            content={"Github Profile"}
+          />
         </div>
       </nav>
     </header>

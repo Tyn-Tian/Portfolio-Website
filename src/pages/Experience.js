@@ -1,9 +1,11 @@
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
+import {
+  Timeline,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  TimelineSeparator,
+} from "@mui/lab";
 import { experience } from "../data/experience";
 import { createTheme } from "@mui/material";
 import ExperienceCard from "../components/ExperienceCard";
@@ -27,8 +29,8 @@ const Experience = () => {
       x: 0,
       opacity: 0.75,
       transition: {
-        duration: 0.5
-      }
+        duration: 0.5,
+      },
     },
   };
 
