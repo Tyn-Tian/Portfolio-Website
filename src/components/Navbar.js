@@ -59,9 +59,9 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link fw-semibold" href="/">
+                  <Link className="nav-link fw-semibold" to="/education">
                     Education
-                  </a>
+                  </Link>
                 </li>
                 <ButtonPrimary className={"d-block d-lg-none mt-lg-0 mt-3"} link={"https://github.com/Tyn-Tian"} content={"Github Profile"} />
               </ul>

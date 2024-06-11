@@ -81,7 +81,7 @@ body {
   color: var(--button);
 }
 
-/* Experience Card Component */
+/* Experience & Education Card Component */
 .card {
   background-color: var(--card);
   color: var(--text-primary);
@@ -140,4 +140,15 @@ body {
 
 .card-container {
   overflow: hidden;
+}
+
+/* Education Page */
+.education {
+  max-width: 1200px;
+  color: var(--text-primary);
+}
+
+.education p.d-block:hover {
+  color: var(--button);
+  cursor: pointer;
 }
