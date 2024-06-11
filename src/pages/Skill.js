@@ -1,6 +1,27 @@
 import { skills } from "../data/skill";
+import { motion } from "framer-motion";
 
 const Skill = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 0.75,
+    },
+  };
+
   return (
     <main className="mt-md-5 pt-md-5 mt-3 pt-3 px-3 px-md-5">
       <section className="skills container">
@@ -11,13 +32,23 @@ const Skill = () => {
             past 1 years.
           </p>
         </div>
-        <div className="skills-container d-flex justify-content-center flex-wrap gap-md-3 gap-2">
-          {skills.map((skill) => (
-            <div className="skill-item px-3 py-2 border rounded-3 opacity-50 fw-semibold">
+        <motion.div
+          className="skills-container d-flex justify-content-center flex-wrap gap-md-3 gap-2"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          {skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              className="skill-item px-3 py-2 border rounded-3 fw-semibold d-flex gap-2 align-items-center"
+              variants={item}
+            >
+              <img src={skill.url} alt="Logo" />
               {skill.name}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
     </main>
   );
