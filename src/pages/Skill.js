@@ -1,27 +1,8 @@
 import { skills } from "../data/skill";
 import { motion } from "framer-motion";
+import { containerVariants, skillVariants } from "../utils/variants";
 
 const Skill = () => {
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.5,
-        staggerChildren: 0.5,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 0.75,
-    },
-  };
-
   return (
     <main className="mt-3 pt-3 px-3 px-md-5">
       <section className="skills container">
@@ -34,7 +15,7 @@ const Skill = () => {
         </div>
         <motion.div
           className="skills-container d-flex justify-content-center flex-wrap gap-md-3 gap-2"
-          variants={container}
+          variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
@@ -42,7 +23,7 @@ const Skill = () => {
             <motion.div
               key={index}
               className="skill-item px-3 py-2 border rounded-3 fw-semibold d-flex gap-2 align-items-center"
-              variants={item}
+              variants={skillVariants}
             >
               <img src={skill.url} alt="Logo" />
               {skill.name}

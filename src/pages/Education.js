@@ -8,30 +8,9 @@ import {
 } from "@mui/lab";
 import { motion } from "framer-motion";
 import EducationCard from "../components/EducationCard";
+import { timelineParafVariants, timelineCardVariants } from "../utils/variants";
 
 const Education = () => {
-  const paraf = {
-    hidden: { x: 50, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 0.75,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
   return (
     <main className="mt-3 pt-3 px-3 px-md-5">
       <section className="education container">
@@ -56,7 +35,7 @@ const Education = () => {
                   data-bs-target={`#modalId`}
                   initial="hidden"
                   animate="visible"
-                  variants={paraf}
+                  variants={timelineParafVariants}
                 >
                   ISB Atma Luhur
                 </motion.p>
@@ -72,7 +51,7 @@ const Education = () => {
                   </div>
                 </div>
                 <motion.div
-                  variants={cardVariants}
+                  variants={timelineCardVariants}
                   initial="hidden"
                   animate="visible"
                   className="d-none d-md-block"
