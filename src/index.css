@@ -81,6 +81,15 @@ body {
   color: var(--button);
 }
 
+/* Experience Card Component */
+.card {
+  background-color: var(--card);
+  color: var(--text-primary);
+  text-align: left;
+  border: 0.1px solid var(--button);
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+}
+
 /* Home Page */
 .hero {
   max-width: 1200px;
@@ -111,4 +120,15 @@ body {
 
 .skills .skill-item img {
   height: 24px;
+}
+
+/* Experience Page */
+.experience {
+  max-width: 1200px;
+  color: var(--text-primary);
+}
+
+.experience p.d-block:hover {
+  color: var(--button);
+  cursor: pointer;
 }

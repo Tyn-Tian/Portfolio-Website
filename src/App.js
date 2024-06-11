@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Skill from "./pages/Skill";
+import Experience from "./pages/Experience";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/skills" element={<Skill />} />
+            <Route path="/experience" element={<Experience />} />
           </Routes>
         </div>
       </div>

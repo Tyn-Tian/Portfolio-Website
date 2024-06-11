@@ -49,9 +49,9 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link fw-semibold" href="/">
+                  <Link className="nav-link fw-semibold" to="/experience">
                     Experience
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link fw-semibold" href="/">

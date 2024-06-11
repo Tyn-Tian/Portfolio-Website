@@ -26,7 +26,7 @@ const Skill = () => {
     <main className="mt-md-5 pt-md-5 mt-3 pt-3 px-3 px-md-5">
       <section className="skills container">
         <div className="title text-center">
-          <h1 className="display-5 fw-bolder">Skilss</h1>
+          <h1 className="display-5 fw-bolder">Skills</h1>
           <p className="opacity-50 fs-5">
             Here are some of my skills on which I have been working on for the
             past 1 years.
