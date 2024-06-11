@@ -21,7 +21,7 @@ const Education = () => {
     <main className="mt-3 pt-3 px-3 px-md-5">
       <section className="education container">
         <TitlePage h1={title.h1} p={title.p} />
-        <div className="education-container mt-5">
+        <div className="education-container mt-md-5">
           <Timeline position="alternate">
             <TimelineItem>
               <TimelineSeparator>

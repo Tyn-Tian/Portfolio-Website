@@ -61,6 +61,17 @@ body {
   color: var(--text-primary);
 }
 
+.experience p.d-block,
+.education p.d-block{
+  transition: color .3s ease-in-out;
+}
+
+.experience p.d-block:hover,
+.education p.d-block:hover {
+  color: var(--button);
+  cursor: pointer;
+}
+
 /* Button Primary Component */
 .button-primary {
   width: fit-content;
@@ -123,11 +134,6 @@ body {
 }
 
 /* Experience Page */
-.experience p.d-block:hover {
-  color: var(--button);
-  cursor: pointer;
-}
-
 .card-container {
   overflow: hidden;
 }
