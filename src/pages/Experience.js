@@ -46,7 +46,7 @@ const Experience = () => {
   };
 
   return (
-    <main className="mt-md-5 pt-md-5 mt-3 pt-3 px-3 px-md-5">
+    <main className="mt-3 pt-3 px-3 px-md-5">
       <section className="experience container">
         <div className="title text-center">
           <h1 className="display-5 fw-bolder">Experience</h1>

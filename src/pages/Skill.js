@@ -8,8 +8,8 @@ const Skill = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
+        delayChildren: 0.5,
+        staggerChildren: 0.5,
       },
     },
   };
@@ -23,7 +23,7 @@ const Skill = () => {
   };
 
   return (
-    <main className="mt-md-5 pt-md-5 mt-3 pt-3 px-3 px-md-5">
+    <main className="mt-3 pt-3 px-3 px-md-5">
       <section className="skills container">
         <div className="title text-center">
           <h1 className="display-5 fw-bolder">Skills</h1>
