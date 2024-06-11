@@ -86,8 +86,13 @@ body {
   background-color: var(--card);
   color: var(--text-primary);
   text-align: left;
-  border: 0.1px solid var(--button);
+  border: 0.1px solid #f2f3f47b;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  transition: border-color .5s ease-in-out;
+}
+
+.card:hover {
+  border-color: var(--button);
 }
 
 /* Home Page */
@@ -131,4 +136,8 @@ body {
 .experience p.d-block:hover {
   color: var(--button);
   cursor: pointer;
+}
+
+.card-container {
+  overflow: hidden;
 }

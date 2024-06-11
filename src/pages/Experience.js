@@ -7,6 +7,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { experience } from "../data/experience";
 import { createTheme } from "@mui/material";
 import ExperienceCard from "../components/ExperienceCard";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   createTheme({
@@ -19,6 +20,28 @@ const Experience = () => {
       },
     },
   });
+
+  const paraf = {
+    hidden: { x: 50, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 0.75,
+      transition: {
+        duration: 0.5
+      }
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
 
   return (
     <main className="mt-md-5 pt-md-5 mt-3 pt-3 px-3 px-md-5">
@@ -39,13 +62,16 @@ const Experience = () => {
                   {index === experience.length - 1 ? "" : <TimelineConnector />}
                 </TimelineSeparator>
                 <TimelineContent>
-                  <p
-                    className="d-block d-md-none opacity-75 fw-semibold"
+                  <motion.p
+                    className="d-block d-md-none fw-semibold"
                     data-bs-toggle="modal"
                     data-bs-target={`#${index}`}
+                    initial="hidden"
+                    animate="visible"
+                    variants={paraf}
                   >
                     {item.company}
-                  </p>
+                  </motion.p>
                   <div
                     className="modal fade"
                     id={index}
@@ -57,7 +83,14 @@ const Experience = () => {
                       <ExperienceCard item={item} />
                     </div>
                   </div>
-                  <ExperienceCard className={"d-none d-md-block"} item={item} />
+                  <motion.div
+                    variants={cardVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="d-none d-md-block"
+                  >
+                    <ExperienceCard item={item} />
+                  </motion.div>
                 </TimelineContent>
               </TimelineItem>
             ))}
