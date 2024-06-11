@@ -51,6 +51,16 @@ body {
   background: #626970;
 }
 
+.hero,
+.skills,
+.experience,
+.education,
+.project,
+.navbar {
+  max-width: 1200px;
+  color: var(--text-primary);
+}
+
 /* Button Primary Component */
 .button-primary {
   width: fit-content;
@@ -66,13 +76,8 @@ body {
 }
 
 /* Navbar Component */
-.navbar {
-  max-width: 1200px;
-}
-
 .navbar-brand,
 .nav-link {
-  color: var(--text-primary);
   transition: all .2s ease-in-out;
 }
 
@@ -96,21 +101,11 @@ body {
 }
 
 /* Home Page */
-.hero {
-  max-width: 1200px;
-  color: var(--text-primary);
-}
-
 .hero h3 span {
   color: var(--button);
 }
 
 /* Skill Page */
-.skills {
-  max-width: 1200px;
-  color: var(--text-primary);
-}
-
 .skills .skill-item {
   color: var(--text-primary);
   transition: color .2s ease-in-out, border-color .2s ease-in-out, opacity .2s ease-in-out;
@@ -128,11 +123,6 @@ body {
 }
 
 /* Experience Page */
-.experience {
-  max-width: 1200px;
-  color: var(--text-primary);
-}
-
 .experience p.d-block:hover {
   color: var(--button);
   cursor: pointer;
@@ -142,23 +132,7 @@ body {
   overflow: hidden;
 }
 
-/* Education Page */
-.education {
-  max-width: 1200px;
-  color: var(--text-primary);
-}
-
-.education p.d-block:hover {
-  color: var(--button);
-  cursor: pointer;
-}
-
 /* Project page */
-.project {
-  max-width: 1200px;
-  color: var(--text-primary);
-}
-
 .project .card {
   top: 0;
   transition: all .7s ease-in-out;
