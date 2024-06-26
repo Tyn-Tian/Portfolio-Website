@@ -5,6 +5,7 @@ import Skill from "./pages/Skill";
 import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Project from "./pages/Project";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Project />} />
             <Route path="/education" element={<Education />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div>

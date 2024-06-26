@@ -56,7 +56,8 @@ body {
 .experience,
 .education,
 .project,
-.navbar {
+.navbar,
+.not-found {
   max-width: 1200px;
   color: var(--text-primary);
 }
@@ -154,4 +155,9 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* NotFound Page */
+.not-found .text-decoration-none {
+  color: var(--button);
 }
