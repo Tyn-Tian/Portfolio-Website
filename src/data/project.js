@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Notes App",
+    badges: ["React.js", "Javascript", "Testing-Library", "Jest"],
+    url: "/assets/notes_app.png",
+    href: "https://github.com/Tyn-Tian/Notes-App",
+    describe:
+      "Recreate submission dicoding 'Learning Fundamentals of Front-End Web Development' using the Reactjs framework aims to learn the basics of Reactjs through simple projects.",
+  },
+  {
     title: "Booklist Laravel",
     badges: ["Laravel", "MySQL", "PHP", "Git"],
     url: "/assets/booklist_laravel.png",
