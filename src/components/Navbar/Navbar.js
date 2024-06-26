@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
 import "./Navbar.css";
+import NavItem from "../NavItem/NavItem";
+import { navbarItem } from "../../data/navbarItem";
 
 const Navbar = () => {
   return (
@@ -39,31 +41,9 @@ const Navbar = () => {
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav mx-auto gap-lg-3 gap-0">
-                <li className="nav-item">
-                  <Link className="nav-link fw-semibold" to="/">
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link fw-semibold" to="/skills">
-                    Skills
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link fw-semibold" to="/experience">
-                    Experience
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link fw-semibold" to="/projects">
-                    Projects
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link fw-semibold" to="/education">
-                    Education
-                  </Link>
-                </li>
+                {navbarItem.map((n) => (
+                  <NavItem desc={n.desc} to={n.to} />
+                ))}
                 <ButtonPrimary
                   className={"d-block d-lg-none mt-lg-0 mt-3"}
                   link={"https://github.com/Tyn-Tian"}
