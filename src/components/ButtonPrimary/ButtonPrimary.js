@@ -1,3 +1,5 @@
+import "./ButtonPrimary.css";
+
 const ButtonPrimary = ({ className, link, content }) => {
   return (
     <a

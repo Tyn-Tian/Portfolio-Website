@@ -1,0 +1,5 @@
+@import url('../../variable.css');
+
+.not-found .text-decoration-none {
+    color: var(--button);
+}

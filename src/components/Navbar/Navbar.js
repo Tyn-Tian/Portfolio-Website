@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import ButtonPrimary from "./ButtonPrimary";
+import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (

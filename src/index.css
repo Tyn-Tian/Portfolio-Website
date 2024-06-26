@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/* Variable Theme */
-:root {
-  --background: #1C1C27;
-  --background-light: #1C1E27;
-  --text-primary: #F2F3F4;
-  --card: #171721;
-  --card-light: #191924;
-  --button: #854CE6;
-}
+@import url('./variable.css');
 
 /* Global Style */
 * {
@@ -63,7 +54,7 @@ body {
 }
 
 .experience p.d-block,
-.education p.d-block{
+.education p.d-block {
   transition: color .3s ease-in-out;
 }
 
@@ -71,31 +62,6 @@ body {
 .education p.d-block:hover {
   color: var(--button);
   cursor: pointer;
-}
-
-/* Button Primary Component */
-.button-primary {
-  width: fit-content;
-  border-color: var(--button);
-  color: var(--button);
-  transition: all .4s ease-in-out;
-}
-
-.button-primary:hover {
-  border-color: var(--button);
-  color: white;
-  background-color: var(--button);
-}
-
-/* Navbar Component */
-.navbar-brand,
-.nav-link {
-  transition: all .2s ease-in-out;
-}
-
-.navbar-brand:hover,
-.nav-link:hover {
-  color: var(--button);
 }
 
 /* Experience & Education Card Component */
@@ -110,54 +76,4 @@ body {
 
 .card:hover {
   border-color: var(--button);
-}
-
-/* Home Page */
-.hero h3 span {
-  color: var(--button);
-}
-
-/* Skill Page */
-.skills .skill-item {
-  color: var(--text-primary);
-  transition: color .2s ease-in-out, border-color .2s ease-in-out, opacity .2s ease-in-out;
-  cursor: default;
-}
-
-.skills .skill-item:hover {
-  border-color: var(--button) !important;
-  color: var(--button);
-  opacity: 1 !important;
-}
-
-.skills .skill-item img {
-  height: 24px;
-}
-
-/* Experience Page */
-.card-container {
-  overflow: hidden;
-}
-
-/* Project page */
-.project .card {
-  top: 0;
-  transition: all .7s ease-in-out;
-}
-
-.project .card:hover {
-  top: -15px;
-}
-
-.limited-text {
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Batasi teks menjadi tiga baris */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* NotFound Page */
-.not-found .text-decoration-none {
-  color: var(--button);
 }

@@ -1,0 +1,9 @@
+/* Variable Theme */
+:root {
+    --background: #1C1C27;
+    --background-light: #1C1E27;
+    --text-primary: #F2F3F4;
+    --card: #171721;
+    --card-light: #191924;
+    --button: #854CE6;
+}

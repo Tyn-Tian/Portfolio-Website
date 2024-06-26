@@ -1,8 +1,9 @@
-import ButtonPrimary from "../components/ButtonPrimary";
-import { projects } from "../data/project";
+import ButtonPrimary from "../../components/ButtonPrimary/ButtonPrimary";
+import { projects } from "../../data/project";
 import { motion } from "framer-motion";
-import { containerVariants, projectCardVariants } from "../utils/variants";
-import TitlePage from "../components/TitlePage";
+import { containerVariants, projectCardVariants } from "../../utils/variants";
+import TitlePage from "../../components/TitlePage/TitlePage";
+import "./Project.css";
 
 const Project = () => {
   const title = {

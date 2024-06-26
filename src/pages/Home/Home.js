@@ -1,5 +1,6 @@
 import Typewriter from "typewriter-effect";
-import ButtonPrimary from "../components/ButtonPrimary";
+import ButtonPrimary from "../../components/ButtonPrimary/ButtonPrimary";
+import "./Home.css";
 
 const Home = () => {
   return (

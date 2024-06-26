@@ -7,9 +7,12 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import { motion } from "framer-motion";
-import EducationCard from "../components/EducationCard";
-import { timelineParafVariants, timelineCardVariants } from "../utils/variants";
-import TitlePage from "../components/TitlePage";
+import EducationCard from "../../components/EducationCard/EducationCard";
+import {
+  timelineParafVariants,
+  timelineCardVariants,
+} from "../../utils/variants";
+import TitlePage from "../../components/TitlePage/TitlePage";
 
 const Education = () => {
   const title = {

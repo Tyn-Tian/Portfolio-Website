@@ -1,7 +1,8 @@
-import { skills } from "../data/skill";
+import { skills } from "../../data/skill";
 import { motion } from "framer-motion";
-import { containerVariants, skillVariants } from "../utils/variants";
-import TitlePage from "../components/TitlePage";
+import { containerVariants, skillVariants } from "../../utils/variants";
+import TitlePage from "../../components/TitlePage/TitlePage";
+import "./Skill.css";
 
 const Skill = () => {
   const title = {

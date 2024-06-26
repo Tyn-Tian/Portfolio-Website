@@ -6,12 +6,13 @@ import {
   TimelineItem,
   TimelineSeparator,
 } from "@mui/lab";
-import { experience } from "../data/experience";
+import { experience } from "../../data/experience";
 import { createTheme } from "@mui/material";
-import ExperienceCard from "../components/ExperienceCard";
+import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
 import { motion } from "framer-motion";
-import { timelineParafVariants, timelineCardVariants } from "../utils/variants";
-import TitlePage from "../components/TitlePage";
+import { timelineParafVariants, timelineCardVariants } from "../../utils/variants";
+import TitlePage from "../../components/TitlePage/TitlePage";
+import "./Experience.css";
 
 const Experience = () => {
   createTheme({

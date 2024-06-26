@@ -1,0 +1,17 @@
+@import url('../../variable.css');
+
+.skills .skill-item {
+    color: var(--text-primary);
+    transition: color .2s ease-in-out, border-color .2s ease-in-out, opacity .2s ease-in-out;
+    cursor: default;
+}
+
+.skills .skill-item:hover {
+    border-color: var(--button) !important;
+    color: var(--button);
+    opacity: 1 !important;
+}
+
+.skills .skill-item img {
+    height: 24px;
+}

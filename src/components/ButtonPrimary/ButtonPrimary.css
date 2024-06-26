@@ -1,0 +1,14 @@
+@import url('../../variable.css');
+
+.button-primary {
+    width: fit-content;
+    border-color: var(--button);
+    color: var(--button);
+    transition: all .4s ease-in-out;
+}
+
+.button-primary:hover {
+    border-color: var(--button);
+    color: white;
+    background-color: var(--button);
+}

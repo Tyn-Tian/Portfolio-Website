@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import TitlePage from "../components/TitlePage";
+import TitlePage from "../../components/TitlePage/TitlePage";
+import "./NotFound.css";
 
 const NotFound = () => {
   return (

@@ -1,0 +1,16 @@
+.project .card {
+    top: 0;
+    transition: all .7s ease-in-out;
+}
+
+.project .card:hover {
+    top: -15px;
+}
+
+.limited-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
