@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Notes App API Express.js",
+    badges: ["RESTful API", "Express.js", "Prisma ORM"],
+    url: "/assets/notes_app_api.png",
+    href: "https://github.com/Tyn-Tian/Notes-App-RESTful-API-Express",
+    describe:
+      "create a clone notes-app API Dicoding and add a user API using express.js.",
+  },
+  {
     title: "Notes App",
     badges: ["React.js", "Javascript", "Testing-Library", "Jest"],
     url: "/assets/notes_app.png",
