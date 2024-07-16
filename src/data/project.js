@@ -5,7 +5,7 @@ export const projects = [
     url: "/assets/notes_app_api.png",
     href: "https://github.com/Tyn-Tian/Notes-App-RESTful-API-Express",
     describe:
-      "create a clone notes-app API Dicoding and add a user API using express.js.",
+      "create a Dicoding API clone note application, aiming to hone the basic understanding of Express.js",
   },
   {
     title: "Notes App",
