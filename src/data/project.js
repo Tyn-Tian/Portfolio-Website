@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Restaurant Catalog",
+    badges: ["React.js", "Tailwindcss", "Vite"],
+    url: "/assets/restaurant_catalog.png",
+    href: "https://github.com/Tyn-Tian/Restaurant-Katalog",
+    describe:
+      "Recreate submission dicoding 'Become a Front-End Web Developer Expert' using the Reactjs framework aims to learn the basics of Reactjs through simple projects.",
+  },
+  {
     title: "Notes App API Express.js",
     badges: ["RESTful API", "Express.js", "Prisma ORM"],
     url: "/assets/notes_app_api.png",
