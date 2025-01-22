@@ -1,5 +1,12 @@
 export const experience = [
   {
+    company: "detikcom",
+    position: "Full-Stack ERP Developer - MSIB Batch 7",
+    describe:
+      "Developed a contributor management application with features such as news verification, contributor ID cards with QR codes for status validation, and contribution tracking based on verification dates. They also implemented a warning letter system and designed ERD and DFD for the application flow. Additionally, they are working on a notification system with customizable read statuses and dynamic table row backgrounds. They integrated UUIDs for foreign keys and built APIs to manage contributor data and honor calculations, while also refactoring code to improve system performance.",
+    skills: ["Laravel", "MySQL", "Reactjs", "Nextjs", "Postman", "Git"],
+  },
+  {
     company: "Bappeda",
     position: "IT Team",
     time: "Mar 24 - Jul 24",
